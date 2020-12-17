@@ -1,0 +1,25 @@
+{
+  "name": "@rsksmart/vc-json-schemas-parser",
+  "version": "1.0.0",
+  "description": "A parser for VC JSON Schemas compliant credentials",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsksmart/vc-json-schemas-parser.git"
+  },
+  "keywords": [
+    "did",
+    "vc",
+    "json",
+    "json-schema"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsksmart/vc-json-schemas-parser/issues"
+  },
+  "homepage": "https://github.com/rsksmart/vc-json-schemas-parser#readme"
+}
