@@ -3,7 +3,7 @@
 </p>
 <h3 align="middle"><code>vc-json-schemas-parser</code></h3>
 <p align="middle">
-  A parser for <a href="https://github.com/rsksmart/vc-jjson-schemas">VC JSON Schemas</a> compliant credentials
+  A parser for <a href="https://github.com/rsksmart/vc-json-schemas">VC JSON Schemas</a> compliant credentials
 </p>
 <p align="middle">
   <a href="https://github.com/rsksmart/vc-json-schemas-parser/actions?query=workflow%3Aci">
@@ -18,7 +18,7 @@
 npm i did-jwt @rsksmart/vc-json-schemas-parser
 ```
 
-This library can be used to parse credentials that are compatible with <a href="https://github.com/rsksmart/vc-jjson-schemas">Verifiable Credentials JSON Schemas</a>
+This library can be used to parse credentials that are compatible with <a href="https://github.com/rsksmart/vc-json-schemas">Verifiable Credentials JSON Schemas</a>
 
 ## Quick start
 
