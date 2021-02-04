@@ -6,8 +6,8 @@
   A parser for <a href="https://github.com/rsksmart/vc-json-schemas">VC JSON Schemas</a> compliant credentials
 </p>
 <p align="middle">
-  <a href="https://github.com/rsksmart/vc-json-schemas-parser/actions?query=workflow%3Aci">
-    <img src="https://github.com/rsksmart/vc-json-schemas-parser/workflows/ci/badge.svg" />
+  <a href="https://github.com/rsksmart/vc-json-schemas-parser/actions?query=workflow%3Atest">
+    <img src="https://github.com/rsksmart/vc-json-schemas-parser/workflows/test/badge.svg" />
   </a>
   <a href="https://badge.fury.io/js/%40rsksmart%2Fvc-json-schemas-parser">
     <img src="https://badge.fury.io/js/%40rsksmart%2Fvc-json-schemas-parser.svg" alt="npm" />
