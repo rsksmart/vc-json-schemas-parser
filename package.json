@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A parser for VC JSON Schemas compliant credentials",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc"
