@@ -15,6 +15,17 @@ function parseVerifiableCredential(schema: string, payload: JWTPayload) {
         }
       }
     }
+    case 'Phone': {
+      if (!credentialSubject.phoneNumber) throw new Error('Invalid Phone credential')
+      return {
+        'Phone': {
+          text: credentialSubject.phoneNumber,
+          prefix: {
+            en: 'Phone number'
+          }
+        }
+      }
+    }
     default: throw new Error('Invalid schema')
   }
 }

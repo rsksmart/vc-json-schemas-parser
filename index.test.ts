@@ -2,8 +2,9 @@ import { decodeJWT } from 'did-jwt'
 import { parseVerifiableCredential } from './index'
 import {
   VerifiableCredentialInvalid,
+  EmailVerifiableCredentialInvalid,
   EmailVerifiableCredential,
-  EmailVerifiableCredentialInvalid
+  PhoneVerifiableCredential
 } from './test-cases'
 
 describe('parser', () => {
@@ -34,6 +35,27 @@ describe('parser', () => {
           text: 'ilan@iovlabs.org',
           prefix: {
             en: 'Email address'
+          }
+        }
+      })
+    })
+  })
+
+  describe('Phone Verifiable Credential', () => {
+    test('errors on invalid Phone credential', () => {
+      expect.assertions(1)
+      const jwt = decodeJWT(EmailVerifiableCredential)
+      expect(() => parseVerifiableCredential('Phone', jwt.payload)).toThrowError('Invalid Phone credential')
+    })
+
+    test('parses Phone credential', () => {
+      expect.assertions(1)
+      const jwt = decodeJWT(PhoneVerifiableCredential)
+      expect(parseVerifiableCredential('Phone', jwt.payload.vc)).toEqual({
+        'Phone': {
+          text: '+5491134246919',
+          prefix: {
+            en: 'Phone number'
           }
         }
       })

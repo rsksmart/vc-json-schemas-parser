@@ -37,6 +37,10 @@ const parsedEmailVC = parseVerifiableCredential('Email', decodedEmailVC.payload)
 */
 ```
 
+Supports:
+- Email
+- Phone
+
 ## Run tests
 
 ```
